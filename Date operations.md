@@ -24,3 +24,10 @@ print("Current year:", today.year)
 print("Current month:", today.month)
 print("Current day:", today.day)
 ```
+
+## Get yesterday date
+```python
+today = datetime.date.today()
+yesterday = today - datetime.timedelta(days=1)
+print(yesterday)
+```
