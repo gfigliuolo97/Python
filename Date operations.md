@@ -8,8 +8,19 @@ if todayDate.day > 25:
 print todayDate.replace(day=1)
 ```
 ## Get current date
+
 ```python
 from datetime import date
 today = date.today()
 print("Current date =", today)
+```
+## Get current day, month and year
+
+```python
+from datetime import date
+today = date.today() 
+
+print("Current year:", today.year)
+print("Current month:", today.month)
+print("Current day:", today.day)
 ```
