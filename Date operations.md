@@ -32,20 +32,19 @@ yesterday = today - datetime.timedelta(days=1)
 print(yesterday)
 ```
 
-## Get current week start date
+## Get current week start and end date
 ```python
-from datetime import date, datetime, timedelta
+from datetime import datetime, timedelta, date
 start = date.today() - timedelta(days=date.today().weekday())
-end = start + timedelta(days=6)
-```
-
-
-day = '12/Oct/2013'
-dt = datetime.strptime(day, '%d/%b/%Y')
-start = dt - timedelta(days=dt.weekday())
 end = start + timedelta(days=6)
 print(start)
 print(end)
+```
+Output: 
+```python
+2021-03-01
+2021-03-07
+```
 
 ## Given a date, get week start and end
 Example with DD/MM/YYYY date format input
